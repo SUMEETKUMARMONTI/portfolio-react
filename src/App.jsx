@@ -284,40 +284,80 @@ const App = () => {
             </div>
           </article>
 
-          {/* Weather Project – change URL to your GitHub/live link */}
+          {/* SkyCast 3D – new weather project */}
           <article
             className="project-card tilt-card clickable-card"
             onMouseMove={handleCardTilt}
             onMouseLeave={resetCardTilt}
             onClick={() =>
-              window.open(
-                "https://github.com/your-username/weather-app",
-                "_blank"
-              )
+              window.open("https://skycast-3d-weather.netlify.app/", "_blank")
             }
           >
             <div className="project-image-wrapper">
               <img
-                src="/images/project-weather.png"
-                alt="Weather App"
+                src="/images/skycast.png"
+                alt="SkyCast 3D Weather App"
                 className="project-image"
               />
             </div>
             <div className="project-content">
-              <h3>Weather Website</h3>
+              <h3>SkyCast 3D – Weather Monitoring Web App</h3>
+
               <p className="project-tech">
-                HTML · CSS · JavaScript · OpenWeather API
+                React · Vite · JavaScript · CSS · OpenWeather API · Netlify ·
+                GitHub
               </p>
+
               <p>
-                Developed a weather web app that fetches live weather data and
-                shows temperature, humidity, wind speed and conditions with a
-                clean, responsive interface.
+                Built a responsive 3D weather dashboard using React + Vite with
+                OpenWeather REST APIs for real-time current weather and
+                short-term forecasts, wrapped in a themed, animated UI.
               </p>
+
               <ul className="project-points">
-                <li>API integration with error handling.</li>
-                <li>Location-wise weather search.</li>
-                <li>Responsive layout for mobile &amp; desktop.</li>
+                <li>
+                  Fetches real-time current weather and 3-hour forecasts for any
+                  city using OpenWeather APIs.
+                </li>
+                <li>
+                  Supports geolocation-based weather detection plus manual city
+                  search.
+                </li>
+                <li>
+                  Includes °C/°F unit toggling, dark/light theme switch, and
+                  recent city history.
+                </li>
+                <li>
+                  Uses client-side caching with <code>localStorage</code> to
+                  reduce API calls and improve performance.
+                </li>
+                <li>
+                  Designed a 3D Earth + Indra Dev themed UI with custom CSS
+                  animations.
+                </li>
+                <li>
+                  Deployed using GitHub + Netlify, keeping the API key secure
+                  via environment variables (no secret in code).
+                </li>
               </ul>
+
+              <div className="project-links">
+                <a
+                  href="https://skycast-3d-weather.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  🌐 Live Demo
+                </a>
+                <span> · </span>
+                <a
+                  href="https://github.com/SUMEETKUMARMONTI/skycast-3d-weather"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  💻 Source Code (GitHub)
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -441,7 +481,7 @@ const App = () => {
           >
             <h3>10th (CBSE)</h3>
             <p className="timeline-tag">
-              GRSS Vidya Mandir, Bhagalpur · 89%(IN "Foundation of IT" Subject)
+              GRSS Vidya Mandir, Bhagalpur · 89% (Foundation of IT)
             </p>
           </div>
         </div>
